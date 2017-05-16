@@ -1,0 +1,18 @@
+<div class='menu'>
+<h1 class='text'> Username:
+  <%= @dashboard.username %>
+</h1>
+
+<% @dashboard.goals.each do |goal| %>
+<p class='text'><%= link_to goal.name, dashboard_goal_path(@dashboard,goal), :class => 'text' %></p>
+<ul class='text'>
+<li class='text'>Completion: <%= goal.completed %></li>
+<li class='text'>Points Current:<%= goal.pointscurrent %></li>
+<li class='text'>Points Goal:<%= goal.pointsgoal %></li>
+<li class='text'>Created At: <%= goal.created_at %></li>
+</ul>
+
+<% end %>
+
+<%= render partial: 'goals/form' %>
+</div>

@@ -1,0 +1,16 @@
+<h1>test</h1>
+<%= form_for @registration, url: registrations_path do |f| %>
+<p>
+  <%= f.label :username %> <br>
+  <%= f.text_field :username%>
+</p>
+
+<p>
+  <%= f.label :email %> <br>
+  <%= f.text_field :email %>
+</p>
+
+<p>
+  <%= f.submit %>
+</p>
+<% end %>

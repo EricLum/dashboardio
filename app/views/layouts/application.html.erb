@@ -1,12 +1,23 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Dashboardio</title>
+    <title>Dashboardio -- The best way to track your goals</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
+
+<header class='nav'>
+  <div class='navcontainer'>
+    <div class ='nav' id='home'>Home</div>
+    <div class='nav'>About</div>
+    <div class ='nav' id='contact'>Contact</div>
+    <div class='nav'><%= link_to 'Trial Build', new_dashboard_path%></div>
+    <div class='nav' id='login'>Log In</div>
+    <div class = 'nav' id='signup'><%= link_to 'Sign Up', new_registration_path, :class =>'nav'%></div>
+  </div>
+</header>
 
   <body>
     <%= yield %>

@@ -1,0 +1,12 @@
+<h1 class='text'> Sample Dashboard </h1>
+
+<h2 class='text'> Create Your Dashboard </h2>
+
+<h3 class='text'> Enter a username </h3>
+<%=form_for @dashboard do |f| %>
+<p>
+<%= f.label :username, "Username", :class => 'text' %>
+<%= f.text_field :username %>
+</p>
+<%= f.submit %>
+<% end %>

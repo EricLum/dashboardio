@@ -1,0 +1,15 @@
+<h3 class='text'> Create a Goal </h3>
+<%= form_for [@dashboard, @goal] do |f| %>
+<p>
+<%= f.label :name, "Goal Name", :class => 'text' %><br/>
+<%= f.text_field :name %>
+</p>
+<p>
+<%= f.label :completed, :class => 'text' %>
+<%= f.check_box :completed%>
+</p>
+
+<p>
+<%= f.submit 'Submit' %>
+</p>
+<% end %>

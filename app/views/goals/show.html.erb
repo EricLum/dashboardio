@@ -1,0 +1,9 @@
+<%= link_to 'Return to Dashboard', dashboard_path(@goal.dashboard_id), :class => 'text' %>
+<h3 class='text'> Goal Name: <%=@goal.name %></h3>
+<ul class='text'>
+<li class='text'>Completion: <%= @goal.completed %></li>
+<li class='text'>Points Current: <%= @goal.pointscurrent %></li>
+<li class='text'>Points Goal: <%= @goal.pointsgoal %></li>
+<li class='text'>Created At: <%= @goal.created_at %></li>
+
+</ul>
